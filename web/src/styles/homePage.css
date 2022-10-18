@@ -1,0 +1,19 @@
+
+div {
+    margin-top: 10em;
+    text-align: center;
+}
+
+button {
+    width: 7.5em;
+    height: 3.2em;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(125, 35, 25);
+}
+
+button:hover{
+    cursor: pointer;
+}

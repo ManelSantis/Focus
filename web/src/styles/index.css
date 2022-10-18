@@ -1,0 +1,67 @@
+body{
+    background-color: white;
+}
+
+div {
+    margin-top: 10em;
+    text-align: center;
+}
+
+#borderOutside {
+    margin-top: -5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    width: 30em;
+    height: 25em;
+    border-radius: 3em;
+    border-color: rgb(255, 0, 0);
+}
+
+#timer{
+    margin-top: -3em;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 2em;
+    width: 10em;
+    height: 3.5em;
+    border-color: rgb(9, 255, 0);
+    
+}
+
+#list {
+    margin-top: 1.5em;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+button {
+    width: 6.5em;
+    height: 2.2em;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#adicionar {
+   color: black;
+   border: solid;
+   border-width: 1px; 
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#start{ background-color: rgb(26, 231, 26); }
+
+#voltar{ background-color: rgb(125, 35, 25);}
+
+#pause{ background-color: rgb(75, 75, 75);}
