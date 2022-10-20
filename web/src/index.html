@@ -3,22 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Focus - Administre o Seu Tempo</title>
+    <script src="https://kit.fontawesome.com/d61e6734ba.js" crossorigin="anonymous"></script>
     <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <a href="./homePage.html">
-        <button id="voltar">Voltar</button>
-    </a>
-    <div>
-        <div><h1 id="timer">00:00:00</h1></div>
-        <button onclick = "start()" id = "start">Começar</button>
-        <button onclick = "pause()" id = "pause" disabled>Pausar</button>
+    <div class="menu">
+        <a href="./homePage.html">
+            <button id="voltar"><i class="fa-solid fa-arrow-left"></i></button>
+        </a>
+        <h1>LOGO</h1>
     </div>
-    <div id="list">
-        <input id="addTask" type="text" placeholder="Tarefa a ser feita..." />
-        <button onclick="adicionarTask()" type="submit" id="adicionar">Adicionar</button>
+    <div class="row">
+        <div class="column">
+            <div class="borderTimer"><div class="timer"><h1 id="timer">00:00</h1></div></div>
+            <br>
+            <br>
+            <button onclick = "start()" id = "start"><i class="fa fa-play"></i></button>
+            <button onclick = "pause()" id = "pause" disabled><i class="fa fa-pause"></i></button>
+        </div>
+        <div class="column">
+            <div id="list">
+                <h2>Minha listinha :)</h2>
+                <input id="addTask" type="text" placeholder="Tarefa a ser feita..." style="width: 16em; height:2em; margin-right: -1em;"/>
+                <button onclick="adicionarTask()" type="submit" id="adicionar"><i class="fa fa-plus" style="margin-right: 0.1em;"></i></button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

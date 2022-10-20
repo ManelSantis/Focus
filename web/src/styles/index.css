@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    justify-content: center;
 }
 
 div {
@@ -7,61 +8,116 @@ div {
     text-align: center;
 }
 
-#borderOutside {
-    margin-top: -5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: dashed;
-    width: 30em;
-    height: 25em;
-    border-radius: 3em;
-    border-color: rgb(255, 0, 0);
+.menu {
+    margin-top: 5em;
+    display: flex;
 }
 
-#timer{
-    margin-top: -3em;
+.row {
+    display: flex;
+}
+
+.column {
     padding-top: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-radius: 2em;
-    width: 10em;
-    height: 3.5em;
-    border-color: rgb(9, 255, 0);
+    flex: 50%;
     
 }
 
-#list {
-    margin-top: 1.5em;
+.borderTimer {
+    background: linear-gradient(to bottom right, red, yellow);
+    border-radius: 100em;
+    width: 19em;
+    height: 19em;
+    margin-top: -18em;
+    margin-left: 8em;
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
+.timer{
+    background-color: white;
+    border-radius: 100em;
+    margin-top: 1em;
+    width: 17em;
+    height: 17em;
+}
+
+span {
+    color: black;
+    font-family: poppins;
+    display: inline-block;
+    padding-top: 1em;
+    align-items: center;
+    width: 17em;
+    height: 2em;
+    border-radius: 1em;
+    border: solid;
+    border-color:  gray;
+    border-width: 0.5px;
+}
+
+#list {
+    margin-top: -20em;
+    margin-left: 8em;
+    width: 25em;
+    height: 30em;
+    box-shadow: 5px 5px 5px black;
+}
+
+#timer {
+    margin-top: 3.5em;
+    font-family: aldrich;
     color: rgb(255, 0, 0);
 }
 
 button {
-    width: 6.5em;
-    height: 2.2em;
-    border-radius: 1em;
+    width: 6.7em;
+    height: 2.3em;
+    border-radius: 100em;
+    padding: 12px 16px;
     border: none;
     color: white;
     font-weight: bold;
+    margin: 0 2em;
+    font-size: 1em;
 }
 
 #adicionar {
-   color: black;
-   border: solid;
-   border-width: 1px; 
-
+    background-color: rgba(246, 100, 70, 1);
+    border-color: rgba(0, 0, 0, 0.19);
+    font-weight: thin;
+    border: solid;
+    font-size: -3em;
+    width: 8em;
+    height: 2.8em;
+    border-width: 1px; 
+    border-radius: 1em;
 }
 
 button:hover{
     cursor: pointer;
 }
 
-#start{ background-color: rgb(26, 231, 26); }
+#start{
+    width: 5em;
+    height: 5em;
+    background: linear-gradient(to  bottom right, red, yellow);
+}
 
-#voltar{ background-color: rgb(125, 35, 25);}
+#voltar{
+    background-color: rgba(246, 100, 70, 1);
+    border-color: rgba(0, 0, 0, 0.19);
+    font-weight: thin;
+    border: solid;
+    font-size: -3em;
+    width: 8em;
+    height: 2.8em;
+    border-width: 1px; 
+    border-radius: 1em;
+}
 
-#pause{ background-color: rgb(75, 75, 75);}
+#pause{ 
+    width: 5em;
+    height: 5em;
+    background: linear-gradient(to  bottom right, red, yellow);
+}

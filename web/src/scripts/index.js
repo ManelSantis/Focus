@@ -20,7 +20,7 @@ function watch() {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    display.textContent = hours + ":" + minutes + ":" + seconds;
+    display.textContent = minutes + ":" + seconds;
 
     if (--timer < 0){
        rest();
@@ -37,7 +37,7 @@ function adicionarTask () {
         <br>
         <br>
         <span> 
-        <input type="checkbox" id="task${tasksCount}" /> 
+        <input type="checkbox" id="task" /> 
         <label> ${document.querySelector("#addTask").value} </label>
         </span> 
         `
@@ -85,7 +85,7 @@ function rest(){
     document.getElementById("start").disabled = false;
     document.getElementById("start").style.cursor = 'pointer';
     clearInterval(interval);
-    display.textContent = "00:00:00";
+    display.textContent = "00:00";
     restTime = !restTime;
     counterMin = null;
 }

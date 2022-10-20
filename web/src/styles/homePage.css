@@ -5,13 +5,16 @@ div {
 }
 
 button {
-    width: 7.5em;
-    height: 3.2em;
-    border-radius: 1em;
-    border: none;
+    background-color: rgba(246, 100, 70, 1);
+    border-color: rgba(0, 0, 0, 0.19);
+    border: solid;
     color: white;
     font-weight: bold;
-    background-color: rgb(125, 35, 25);
+    font-size: -3em;
+    width: 8em;
+    height: 2.8em;
+    border-width: 1px; 
+    border-radius: 1em;
 }
 
 button:hover{
