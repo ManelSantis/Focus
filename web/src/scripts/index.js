@@ -66,10 +66,10 @@ function pause(){
     
     if(pauseWatch) {
         clearInterval(interval);
-        document.getElementById("pause").textContent = "Voltar";
+        document.getElementById("pause").innerHTML = `<i class="fa-solid fa-backward"></i>`;
     } else {
         interval = setInterval(watch, 1000);
-        document.getElementById("pause").textContent = "Pausar";
+        document.getElementById("pause").innerHTML = `<i class="fa fa-pause"></i>`;
     }
     pauseWatch = !pauseWatch;
 }
@@ -77,9 +77,9 @@ function pause(){
 function rest(){
     document.getElementById("pause").disabled = true; // Desabilitar botão
     if (restTime) {
-        document.getElementById("start").textContent = "Descanço"; 
+        document.getElementById("start").innerHTML =  `<i class="fa-solid fa-rotate-right"></i>`; 
     } else {
-        document.getElementById("start").textContent = "Começar"; 
+        document.getElementById("start").innerHTML = `<i class="fa fa-play"></i>`; 
     }
     
     document.getElementById("start").disabled = false;
